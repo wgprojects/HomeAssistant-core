@@ -12,7 +12,13 @@ from .const import DOMAIN, LOGGER
 from .coordinator import AvocentDpduDataUpdateCoordinator
 
 
-PLATFORMS: list[Platform] = [Platform.SENSOR, Platform.SWITCH]
+PLATFORMS: list[Platform] = [Platform.SWITCH]
+
+type AvocentDPDUConfigEntry = ConfigEntry[AvocentDPDUData]
+
+@dataclass
+class AvocentDPDUData:
+    coordinator: AvocentDpduDataUpdateCoordinator
 
 type AvocentDPDUConfigEntry = ConfigEntry[AvocentDPDUData]
 
