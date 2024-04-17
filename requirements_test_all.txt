@@ -492,7 +492,7 @@ automower-ble==0.2.0
 av==13.1.0
 
 # homeassistant.components.avocent_dpdu
-avocentdpdu==1.1.0
+avocentdpdu==2.0.1
 
 # homeassistant.components.axis
 axis==63
